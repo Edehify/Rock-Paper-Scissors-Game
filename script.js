@@ -15,7 +15,23 @@ function getHumanChoice() {
   choice = choice.trim().toLowerCase();
   return capitalize(choice);
 }
+function playRound(human, computer) {
+    if(human === computer) {
+      console.log(`It is a tie! Computer chose ${computer} and you chose ${human}`);
+    }
+    else if(
+    (human === "Rock" && computer === "Scissors") ||
+    (human === "Scissors" && computer === "Paper") ||
+    (human === "Paper" && computer === "Rock"))
+   {
+    console.log(`You Win! ${human} beats ${computer}`);
+  } 
+  else {
+    console.log(`You lose! ${computer} beats ${human}`);
+  }
+
+}
+
 let humanChoice = getHumanChoice();
 let computerChoice = getComputerChoice();
-console.log(humanChoice);
-console.log(computerChoice);
+playRound(humanChoice, computerChoice)
