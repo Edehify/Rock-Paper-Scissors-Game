@@ -53,4 +53,15 @@ function playRound() {
     console.log(`Score: You ${humanScore} - Computer ${computerScore}`);
     console.log("------");
   }
+   // Declare final winner
+   if (humanScore > computerScore) {
+    console.log("🎉 You win the game!");
+  } else if (computerScore > humanScore) {
+    console.log("😞 Computer wins the game!");
+  } else {
+    console.log("🤝 It's a draw!");
+  }
 }
+
+
+
