@@ -1,3 +1,6 @@
+let humanScore = 0;
+let computerScore = 0;
+
 
 function getComputerChoice() {
   let choice = ["Rock", "Paper", "Scissors"];
@@ -40,5 +43,14 @@ function playRound() {
     let humanChoice = getHumanChoice();
     let computerChoice = getComputerChoice();
     playRound(humanChoice, computerChoice)
+
+    if (result === "human") {
+      humanScore++;
+    } else if (result === "computer") {
+      computerScore++;
+    }
+
+    console.log(`Score: You ${humanScore} - Computer ${computerScore}`);
+    console.log("------");
   }
 }
