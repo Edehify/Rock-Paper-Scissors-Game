@@ -29,11 +29,11 @@ function playRound(human, computer) {
     (human === "Paper" && computer === "Rock"))
    {
     console.log(`You Win! ${human} beats ${computer}`);
-    return human;
+    return "human";
   } 
   else {
     console.log(`You lose! ${computer} beats ${human}`);
-    return computer;
+    return "computer";
   }
 
 }
