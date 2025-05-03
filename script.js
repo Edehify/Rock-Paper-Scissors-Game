@@ -64,4 +64,8 @@ function playRound() {
 }
 
 
+// start game
+playGame();
+
+
 
