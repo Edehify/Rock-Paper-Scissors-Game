@@ -38,7 +38,7 @@ function playRound(human, computer) {
 
 }
 
-function playGmae() {
+function playGame() {
   for(let i = 0; i < 5; i++) {
     let humanChoice = getHumanChoice();
     let computerChoice = getComputerChoice();
