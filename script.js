@@ -21,7 +21,7 @@ function getHumanChoice() {
 function playRound(human, computer) {
     if(human === computer) {
       console.log(`It is a tie! Computer chose ${computer} and you chose ${human}`);
-      return tie;
+      return "tie";
     }
     else if(
     (human === "Rock" && computer === "Scissors") ||
@@ -42,7 +42,7 @@ function playGame() {
   for(let i = 0; i < 5; i++) {
     let humanChoice = getHumanChoice();
     let computerChoice = getComputerChoice();
-    playRound(humanChoice, computerChoice)
+    let result = playRound(humanChoice, computerChoice)
 
     if (result === "human") {
       humanScore++;
