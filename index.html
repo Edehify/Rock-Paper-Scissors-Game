@@ -3,9 +3,41 @@
     <head>
           <meta charset="UTF-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="style.css">
           <title>Rock, Paper & Scissors</title>
+          
     </head>
     <body>
+      <div class="cont">
+          <div class="container">
+             
+            <h2>Rock, Paper & Scissors</h2>
+            <div class="scoreDisplay">Score: You 0 - Computer 0</div>
+            <div class="roundHint">
+              <div class="gameRound">Round 0 of 5
+             </div>
+            <p><em><a href="informations.html">Hint</a></em></p>
+            </div>
+            
+            <div>
+              <button data-button="Rock">Rock</button>
+            <button data-button="Paper">Paper</button>
+            <button data-button="Scissors">Scissors</button>
+
+            </div>
+            
+            <div class = "scoreboard">
+              <div class="score">
+
+              </div>
+              <button class="restart-button" hidden>Play Again</button>
+              <div class="game-over-message" hidden>Game Over</div>
+
+            </div>
+      </div>
+      </div>
+      
+      
       <script src="script.js"></script>
     </body>
 </html>
